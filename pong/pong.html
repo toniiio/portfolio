@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 	<html>
 
 		<head>
@@ -11,23 +10,21 @@
 
 		<body onLoad = "principale();">
 
-			<header>
+		<header>		
 				
-				
-				<a id="ScoreGauche">SCORE Gauche :</a>
-			
-				<a id="ScoreDroite">SCORE Droite:</a> 
+		<a id="ScoreGauche">SCORE Gauche :</a>
+		<a id="ScoreDroite">SCORE Droite:</a> 
 
-			</header>
+		</header>
 			
-			<nav>
+		<nav>
 			touche du joueur 1: la touche du haut z et la touche du bas s </br>
 			touche du joueur 2: la touche du haut fleche haute et la touche du bas fleche du bas</br>
 		
-			</nav>
+		</nav>
 		
-			<canvas id="canvasGlobal" width="1152px" height="604px">
-				<script>
+		<canvas id="canvasGlobal" width="1152px" height="604px">
+			<script>
 				var canvas = document.getElementById('canvasGlobal');
 				var context = canvas.getContext('2d')
 
@@ -39,21 +36,13 @@
 
 					// Dessiner Raquette2
 					dessinerRaquette2() 
-				</script>
-			</canvas>
-
-
-
-			<footer>
-		
-			</footer>
-
-			<script>
+			</script>
+		</canvas>
+	
+		<script>
 				window.onkeydown = OnKeyDown;
 				window.onkeypress = OnKeyPressed;
 				window.onkeyup = OnkeyUp;
-			</script>
-
-		</body>
-
-	</html>	
+		</script>
+	</body>
+</html>	

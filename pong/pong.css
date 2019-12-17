@@ -9,7 +9,7 @@
 }
 
 body {
-	background-image : url('../image2/jaune.jpg');
+	
 	width: 940px;
 	margin: 0px auto;
 	padding: 5px;
@@ -23,7 +23,6 @@ body {
 	height: 604px;
 	border: 1px solid green;
 	float: left;
-	background-image : url('../image2/bleu.png');
 	position: center;
 
 }
