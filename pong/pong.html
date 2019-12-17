@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+	<html>
+
+		<head>
+			<link rel="stylesheet" type="text/css" href="pong.css">
+			<script language ="javascript" src="global.js"></script>
+			<script language ="javascript" src="principal.js"></script>
+			
+		</head>
+
+		<body onLoad = "principale();">
+
+			<header>
+				
+				
+				<a id="ScoreGauche">SCORE Gauche :</a>
+			
+				<a id="ScoreDroite">SCORE Droite:</a> 
+
+			</header>
+			
+			<nav>
+			touche du joueur 1: la touche du haut z et la touche du bas s </br>
+			touche du joueur 2: la touche du haut fleche haute et la touche du bas fleche du bas</br>
+		
+			</nav>
+		
+			<canvas id="canvasGlobal" width="1152px" height="604px">
+				<script>
+				var canvas = document.getElementById('canvasGlobal');
+				var context = canvas.getContext('2d')
+
+					// Dessiner Balle
+					dessinerBalle();
+
+					// Dessiner Raquette
+					dessinerRaquette();
+
+					// Dessiner Raquette2
+					dessinerRaquette2() 
+				</script>
+			</canvas>
+
+
+
+			<footer>
+		
+			</footer>
+
+			<script>
+				window.onkeydown = OnKeyDown;
+				window.onkeypress = OnKeyPressed;
+				window.onkeyup = OnkeyUp;
+			</script>
+
+		</body>
+
+	</html>	
