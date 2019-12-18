@@ -1,0 +1,56 @@
+body
+{
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    color: #181818;
+	
+
+}
+#bloc_page
+{
+	text-align: center;	
+}
+
+h1 
+{  
+  margin:auto;
+  padding: 10px;
+  font-size: 20px;
+  width: 20%;
+  border-radius: 3px;
+  border: 1px solid;
+  margin-bottom: 40px;
+}
+li 
+{
+  list-style-type: none;
+  margin:auto 560px;
+  padding: 10px;
+  font-size: 20px;
+  width: 20%;
+  border-radius: 3px;
+  border: 1px solid;
+  margin-bottom: 40px;
+}
+.ge
+{
+background-color:red;
+}
+.gr
+{
+background-color:yellow;	
+}
+.ga
+{
+background-color:brown;	
+}
+.bo
+{
+font-weight:bold;
+text-decoration:blind;
+background-color:pink;	
+}
+.bg
+{
+background: url('images/gg.jpg');
+background-size: 800px 800px;
+}
