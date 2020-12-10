@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello StagiaireController!{% endblock %}
+
+{% block body %}
+    <a href="{{ path('stagiaire_insert') }}">Ajouter un stagiaire</a>
+    <table>
+        {% for s in stagiaire %}
+        <tr>
+            <td>{{ s.name }}</td>
+            <td>{{ s.phone }}</td>
+            <td>{{ s.birthday }}</td>
+            {% if is_granted("ROLE_ADMIN") %}
+            <td><a href="{{ path('stagiaire_edit', {'id': s.id}) }}">Modifier/Supprimer</a></td>
+            {% endif %}
+        </tr>
+        {% endfor %}
+    </table>
+{% endblock %}
